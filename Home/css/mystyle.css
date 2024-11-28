@@ -1,25 +1,42 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #cfe8d2;
 }
 
 /* ABOUT ME */
 h1 {
+    font-family: 'Impact', sans-serif; /* Use a similar font to Monopoly */
     padding: 20px;
-    background-color: #E74C3C;
+    background-color: #E74C3C; /* Red background like the Monopoly logo */
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
     text-align: center;
-    border-radius: 50%; 
-    width: 300px;
-    height: 300px;
-    line-height: 300px; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 15px;
     margin: 40px auto;
-    border: 5px solid white;
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Add black stroke and glow effect */
+h1::before {
+    content: 'ABOUT ME';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    color: black;
+    z-index: -1;
+    font-size: 4.1em;
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
 /* Header Styling for h2 */
 h2 {
     padding: 10px;
