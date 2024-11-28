@@ -1,11 +1,101 @@
 body {
-    background-color: lightgreen;
-  }
-  h1 {
-    color: white;
+    font-family: Arial, sans-serif;
     text-align: center;
-  }
-  p {
-    font-family: kabel;
-    font-size: 20px;
-  }
+    background-color: #f0f0f0;
+}
+
+/* ABOUT ME */
+h1 {
+    padding: 20px;
+    background-color: #E74C3C;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%; 
+    width: 300px;
+    height: 300px;
+    line-height: 300px; 
+    margin: 40px auto;
+    border: 5px solid white;
+}
+
+/* Header Styling for h2 */
+h2 {
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Monopoly-like Property Colors for Headers */
+h2 {
+    background-color: #66CC66; /* Green (properties) */
+}
+
+/* Centering Text and Adding Padding to Paragraphs */
+p, ul, table {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 800px;
+}
+
+/* Styling Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #F5F5F5;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Styling Links */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #FFCC00; /* Yellow like Monopoly */
+    color: white;
+}
+
+/* Image Styling */
+img {
+    width: 50%;
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Box Styling for Header and Titles */
+h1, h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
