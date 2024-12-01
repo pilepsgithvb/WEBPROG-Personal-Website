@@ -1,116 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
-    background: url('https://media.istockphoto.com/id/458403937/photo/monopoly-game-money.jpg?s=612x612&w=0&k=20&c=LKz78thm2Mu8QDPFZNaL027fBU62mkFeb6_9fLn1Ss0=') no-repeat center center fixed;
+    background: url('https://i.ibb.co/D9KZKNB/monopoly-money.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    overflow-y: auto;
 }
 
 .container {
     background-color: white;
-    width: 80%;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 h1 {
-    font-family: 'Impact', 'Arial Black', sans-serif;
-    font-size: 24px;
-    color: black;
-    margin: 10px 0;
+    font-size: 2.5em;
+    background-color: #d4af37; /* Monopoly gold style */
 }
 
 h2 {
-    font-family: 'Verdana', sans-serif;
+    font-size: 1.5em;
+    background-color: #f0e68c;
+}
+
+p, ul, table {
+    font-family: 'Arial', sans-serif;
     color: black;
-    padding: 20px 0;
-    margin: 20px 0;
-    border: 3px solid black;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h2:nth-of-type(1) {
-    background-color: #a8d5e2;
-}
-h2:nth-of-type(2) {
-    background-color: #d17dc4;
-}
-h2:nth-of-type(3) {
-    background-color: #f39c12;
-}
-h2:nth-of-type(4) {
-    background-color: #e74c3c;
-}
-h2:nth-of-type(5) {
-    background-color: #f1c40f;
-}
-h2:nth-of-type(6) {
-    background-color: #27ae60;
-}
-h2:nth-of-type(7) {
-    background-color: #ba8f39;
-}
-
-p {
-    font-size: 16px;
-    color: #333333;
     line-height: 1.6;
-    margin: 10px auto;
-}
-
-ul {
-    list-style: square;
-    padding: 0;
-    margin: 10px auto;
-    width: 60%;
-    text-align: left;
-}
-
-ul li {
-    margin: 5px 0;
 }
 
 table {
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
     border-collapse: collapse;
-    text-align: center;
+    margin: 20px 0;
 }
 
-table, th, td {
-    border: 1px solid #000000;
-}
-
-th {
-    background-color: #d3d3d3;
+table th, table td {
     padding: 10px;
-    font-weight: bold;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
-td {
-    padding: 8px;
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 img {
-    margin: 10px;
-    width: 150px;
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
     height: auto;
-    border: 2px solid #000000;
 }
 
 a {
-    color: black;
+    color: blue;
     text-decoration: none;
-    font-weight: bold;
 }
 
 a:hover {
