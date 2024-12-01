@@ -1,29 +1,40 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background: url('https://media.istockphoto.com/id/458403937/photo/monopoly-game-money.jpg?s=612x612&w=0&k=20&c=LKz78thm2Mu8QDPFZNaL027fBU62mkFeb6_9fLn1Ss0=') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
     padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     text-align: center;
 }
 
 h1 {
     font-family: 'Impact', 'Arial Black', sans-serif;
-    color: #ffffff;
-    background-color: #d71c2b;
-    border: 3px solid #000000;
-    width: 60%;
-    margin: 20px auto;
-    padding: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    color: black;
+    margin: 10px 0;
 }
 
 h2 {
     font-family: 'Verdana', sans-serif;
-    color: #ffffff;
-    padding: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-    width: 80%;
+    color: black;
+    padding: 20px 0;
+    margin: 20px 0;
+    border: 3px solid black;
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -31,19 +42,22 @@ h2:nth-of-type(1) {
     background-color: #a8d5e2;
 }
 h2:nth-of-type(2) {
-    background-color: #fef200;
+    background-color: #d17dc4;
 }
 h2:nth-of-type(3) {
-    background-color: #d4a017;
+    background-color: #f39c12;
 }
 h2:nth-of-type(4) {
-    background-color: #ba8f39;
+    background-color: #e74c3c;
 }
 h2:nth-of-type(5) {
-    background-color: #e95420;
+    background-color: #f1c40f;
 }
 h2:nth-of-type(6) {
-    background-color: #1f75fe;
+    background-color: #27ae60;
+}
+h2:nth-of-type(7) {
+    background-color: #ba8f39;
 }
 
 p {
@@ -51,7 +65,6 @@ p {
     color: #333333;
     line-height: 1.6;
     margin: 10px auto;
-    width: 60%;
 }
 
 ul {
@@ -95,7 +108,7 @@ img {
 }
 
 a {
-    color: #d71c2b;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
