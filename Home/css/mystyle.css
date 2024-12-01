@@ -30,13 +30,18 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: 'Futura','Arial', sans-serif;
+    font-family: 'Futura', 'Arial', sans-serif;
     color: #000;
     border: 2px solid #000000;
     margin: 20px auto;
     padding: 10px;
     width: 80%;
     border-radius: 5px;
+    text-transform: uppercase;  
+}
+
+h2 span {
+    text-transform: none;  
 }
 
 /* Header 2 styles */
@@ -67,6 +72,7 @@ h2.green {
 h2.brown {
     background-color: #ad795b;
 }
+
 
 p, ul, table {
     font-family: 'Arial', sans-serif;
