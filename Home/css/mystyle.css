@@ -1,5 +1,5 @@
 body {
-    background: url('https://pin.it/6FVBi5l1D') no-repeat center center fixed;
+    background: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/462560406_1143648440464192_7961775843854511826_n.png?stp=dst-png_s480x480&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFmcSsy40XiGDAaDsw0u3H0OpP7rugklwk6k_uu6CSXCWKaEmZMZ4SorceZ5m02hAV9W5TfBsqn8c8jWDhZR4Vf&_nc_ohc=3nDmdpcoOf0Q7kNvgGZ-FyU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFFMyu-x8ZhYe_0lznwxBF98EHa-RIk8fsUQEGbYY4JJg&oe=6773ECF8') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -16,23 +16,55 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2 {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    color: black;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 h1 {
-    font-size: 2.5em;
-    background-color: #d4af37; /* Monopoly gold style */
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    color: #ffffff;
+    background-color: #d71c2b;
+    border: 3px solid #000000;
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 h2 {
-    font-size: 1.5em;
-    background-color: #f0e68c;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #000;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+/* Header 2 styles */
+h2.blue {
+    background-color: #7bb7e0;
+}
+
+h2.pink {
+    background-color: #e151af;
+}
+
+h2.orange {
+    background-color: #ffa500;
+}
+
+h2.red {
+    background-color: #f2182a;
+}
+
+h2.yellow {
+    background-color: #fefe24;
+}
+
+h2.green {
+    background-color: #118524;
+}
+
+h2.brown {
+    background-color: #ad795b;
 }
 
 p, ul, table {
