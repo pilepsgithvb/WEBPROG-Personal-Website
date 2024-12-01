@@ -1,14 +1,12 @@
-/* mystyle.css */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #cfe8d2;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     font-family: 'Impact', 'Arial Black', sans-serif;
     color: #d71c2b;
     background-color: #ffffff;
@@ -24,6 +22,8 @@ h2 {
     color: #ffffff;
     padding: 10px;
     margin-bottom: 10px;
+    display: inline-block;
+    width: 80%;
     text-align: center;
 }
 
@@ -50,11 +50,16 @@ p {
     font-size: 16px;
     color: #333333;
     line-height: 1.6;
+    margin: 10px auto;
+    width: 60%;
 }
 
 ul {
     list-style: square;
-    padding-left: 20px;
+    padding: 0;
+    margin: 10px auto;
+    width: 60%;
+    text-align: left;
 }
 
 ul li {
@@ -65,6 +70,7 @@ table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+    text-align: center;
 }
 
 table, th, td {
@@ -78,7 +84,6 @@ th {
 }
 
 td {
-    text-align: center;
     padding: 8px;
 }
 
