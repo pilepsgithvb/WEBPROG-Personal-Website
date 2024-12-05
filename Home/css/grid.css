@@ -1,124 +1,23 @@
-.item1 {
-    grid-area: header;
-    font-size: 40px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #4CAF50;
-  }
-  
-  .item2 {
-    grid-area: about;
-  }
-  
-  .item3 {
-    grid-area: education;
-  }
-  
-  .item4 {
-    grid-area: course;
-  }
-  
-  .item5 {
-    grid-area: experience;
-  }
-  
-  .item6 {
-    grid-area: hobbies;
-  }
-  
-  .item7 {
-    grid-area: goals;
-  }
-  
-  .item8 {
-    grid-area: gallery;
-  }
-  
-  .item9 {
-    grid-area: links;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header header header header'
-      'about about education education course course'
-      'experience experience hobbies hobbies goals goals'
-      'gallery gallery links links links links';
-    gap: 15px;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  .grid-container > div {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-    color: #333333;
-  }
-  
-  h1, h2 {
-    color: #333333;
-  }
-  
-  p, ul, table {
-    text-align: left;
-    font-size: 16px;
-    margin: 0;
-    padding: 10px 0;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-    border-radius: 8px;
-  }
-  
-  a {
-    color: #2196F3;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  th, td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-areas:
-        'header'
-        'about'
-        'education'
-        'course'
-        'experience'
-        'hobbies'
-        'goals'
-        'gallery'
-        'links';
-    }
-    .grid-container > div {
-      font-size: 16px;
-      padding: 10px;
-    }
-  }
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
