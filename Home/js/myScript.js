@@ -3,7 +3,7 @@ function myFunction() {
 }
 
 function myFunction2() {
-  const element = document.getElementsByTagName("a");
+  const element = document.getElementsByTagName("abc");
 
   document.getElementById("demo").innerHTML = 'Wait for it ' + element[0].innerHTML;
 
