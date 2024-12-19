@@ -1,16 +1,31 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #eaeaea;
     color: #333;
+    display: flex;
+    justify-content: center;
 }
 
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
 header {
+    text-align: center;
     background-color: #ff6600;
     color: white;
-    padding: 15px 20px;
-    text-align: center;
+    padding: 15px 0;
+    border-radius: 8px;
 }
 
 header h1 {
@@ -18,50 +33,40 @@ header h1 {
     font-size: 24px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 10px 0 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
+/* Sections */
 section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    margin: 20px 0;
 }
 
 h2 {
     color: #ff6600;
+    margin-bottom: 10px;
     border-bottom: 2px solid #ff6600;
+    display: inline-block;
     padding-bottom: 5px;
 }
 
+p, ul, table {
+    margin: 10px 0;
+}
+
+/* List Styling */
+ul {
+    list-style: square inside;
+    padding-left: 0;
+}
+
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
-table th,
-table td {
+table th, table td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: center;
+    text-align: left;
 }
 
 table th {
@@ -69,23 +74,20 @@ table th {
     color: white;
 }
 
-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.gallery {
+/* Gallery Styling */
+.image-gallery {
     display: flex;
     gap: 15px;
 }
 
-.gallery img {
-    width: 200px;
+.image-gallery img {
+    width: 150px;
     height: auto;
-    border: 2px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Links */
 a {
     color: #ff6600;
     text-decoration: none;
