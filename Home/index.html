@@ -3,90 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
+    <title>Philippe's Personal Website</title>
     <link rel="stylesheet" href="css/styles.css">
-</head>
+    </head>
 <body>
+    <div class="header">Philippe's Personal Website</div>
+
     <div class="container">
-        <header>
-            <h1>Philippe's Personal Profile</h1>
-        </header>
-
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Hello! My name is Philippe, I am an aspiring IT student who is passionate about technology and improving myself.</p>
-        </section>
-
-        <section class="education">
-            <h2>Education / Achievements</h2>
-            <ul>
-                <li>With High Honors (Malate Catholic School, 2019-2020)</li>
-                <li>With Honors (Asia Pacific College, 2023-2024)</li>
-            </ul>
-        </section>
-
-        <section class="course">
-            <h2>Course</h2>
-            <p>Bachelor of Science in Information Technology Specializing in Mobile and Internet Technology</p>
-        </section>
-
-        <section class="experience">
-            <h2>IT Experience</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Project</th>
-                        <th>Position</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tutor Booking App</td>
-                        <td>UI Designer</td>
-                    </tr>
-                    <tr>
-                        <td>Gamified Course: APC Dungeon</td>
-                        <td>Head Animator</td>
-                    </tr>
-                    <tr>
-                        <td>Facility Booking System: Rambook</td>
-                        <td>Head Developer</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="hobbies">
-            <h2>Hobbies & Interests</h2>
-            <ul>
-                <li>Basketball</li>
-                <li>Gaming</li>
-                <li>Music</li>
-                <li>Watching Movies</li>
-            </ul>
-        </section>
-
-        <section class="goals">
-            <h2>Goals in Life / Dream</h2>
-            <p>To be successful in life and give back to my family.</p>
-        </section>
-
-        <section class="gallery">
-            <h2>Picture Gallery</h2>
-            <p>Here are some images related to my interests:</p>
-            <div class="image-gallery">
-                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/463004261_2023136481489815_4583702698394093898_n.jpg" alt="Music">
-                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462545799_568958942525309_5011812986289502423_n.jpg" alt="Bonding with friends">
-            </div>
-        </section>
-
-        <section class="socials">
-            <h2>Links to Socials</h2>
-            <ul>
-                <li><a href="https://github.com/pilepsgithvb">Github Account</a></li>
-                <li><a href="https://www.linkedin.com/in/philippe-gerong-67705a24a">LinkedIn Profile</a></li>
-            </ul>
-        </section>
+        <div class="tile" onclick="showContent('about')">About Me</div>
+        <div class="tile" onclick="showContent('education')">Education and Achievements</div>
+        <div class="tile" onclick="showContent('course')">Course</div>
+        <div class="tile" onclick="showContent('experience')">IT Experience</div>
+        <div class="tile" onclick="showContent('hobbies')">Hobbies and Interests</div>
+        <div class="tile" onclick="showContent('goals')">Goals in Life</div>
+        <div class="tile" onclick="showContent('gallery')">Picture Gallery</div>
+        <div class="tile" onclick="showContent('links')">Links to Socials</div>
     </div>
+
+    <div id="about" class="content hidden">
+        <h1>About Me</h1>
+        <p>Hello! My name is Philippe, I am an aspiring IT student passionate about technology and improving myself.</p>
+    </div>
+
+    <div id="education" class="content hidden">
+        <h2>Education and Achievements</h2>
+        <ul>
+            <li>With High Honors (Malate Catholic School, 2019-2020)</li>
+            <li>With Honors (Asia Pacific College, 2023-2024)</li>
+        </ul>
+    </div>
+
+    <div id="course" class="content hidden">
+        <h2>Course</h2>
+        <p>Bachelor of Science in Information Technology Specializing in Mobile and Internet Technology</p>
+    </div>
+
+    <div id="experience" class="content hidden">
+        <h2>IT Experience</h2>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Position</th>
+            </tr>
+            <tr>
+                <td>Tutor Booking App</td>
+                <td>UI Designer</td>
+            </tr>
+            <tr>
+                <td>Gamified Course: APC Dungeon</td>
+                <td>Head Animator</td>
+            </tr>
+            <tr>
+                <td>Facility Booking System: Rambook</td>
+                <td>Head Developer</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="hobbies" class="content hidden">
+        <h2>Hobbies and Interests</h2>
+        <ul>
+            <li>Basketball</li>
+            <li>Gaming</li>
+            <li>Music</li>
+            <li>Watching Movies</li>
+        </ul>
+    </div>
+
+    <div id="goals" class="content hidden">
+        <h2>Goals in Life</h2>
+        <p>To be successful in life and give back to my family.</p>
+    </div>
+
+    <div id="gallery" class="content hidden">
+        <h2>Picture Gallery</h2>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/463004261_2023136481489815_4583702698394093898_n.jpg" alt="Music">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462545799_568958942525309_5011812986289502423_n.jpg" alt="Bonding with friends">
+    </div>
+
+    <div id="links" class="content hidden">
+        <h2>Links to Socials</h2>
+        <ul>
+            <li><a href="https://github.com/pilepsgithvb">Github Account</a></li>
+            <li><a href="https://www.linkedin.com/in/philippe-gerong-67705a24a">LinkedIn Profile</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function showContent(id) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
