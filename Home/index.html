@@ -7,69 +7,96 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">Philippe's Personal Website</div>
-
-    <div class="container">
-        <div class="tile" onclick="showContent('about')">About Me</div>
-        <div class="tile" onclick="showContent('education')">Education</div>
-        <div class="tile" onclick="showContent('experience')">IT Experience</div>
-        <div class="tile" onclick="showContent('goals')">Goals</div>
-    </div>
-
-    <div id="about" class="content">
-        <div class="content-header">About Me</div>
-        <div class="content-body">
-            <p>Hello! My name is Philippe, and I am passionate about technology and improving myself every day.</p>
-        </div>
-    </div>
-
-    <div id="education" class="content">
-        <div class="content-header">Education</div>
-        <div class="content-body">
+    <header>
+        <h1>Philippe's Personal Website</h1>
+        <nav>
             <ul>
-                <li>With High Honors (Malate Catholic School, 2019-2020)</li>
-                <li>With Honors (Asia Pacific College, 2023-2024)</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#experience">IT Experience</a></li>
+                <li><a href="#hobbies">Hobbies & Interests</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#gallery">Picture Gallery</a></li>
+                <li><a href="#socials">Links to Socials</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div id="experience" class="content">
-        <div class="content-header">IT Experience</div>
-        <div class="content-body">
-            <table border="1" style="margin: auto;">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Philippe, I am an aspiring IT student who is passionate about technology and improving myself.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education / Achievements</h2>
+        <ul>
+            <li>With High Honors (Malate Catholic School, 2019-2020)</li>
+            <li>With Honors (Asia Pacific College, 2023-2024)</li>
+        </ul>
+    </section>
+
+    <section id="course">
+        <h2>Course</h2>
+        <p>Bachelor of Science in Information Technology Specializing in Mobile and Internet Technology</p>
+    </section>
+
+    <section id="experience">
+        <h2>IT Experience</h2>
+        <table>
+            <thead>
                 <tr>
                     <th>Project</th>
                     <th>Position</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Tutor Booking App</td>
                     <td>UI Designer</td>
                 </tr>
                 <tr>
-                    <td>APC Dungeon</td>
+                    <td>Gamified Course: APC Dungeon</td>
                     <td>Head Animator</td>
                 </tr>
                 <tr>
-                    <td>Rambook</td>
+                    <td>Facility Booking System: Rambook</td>
                     <td>Head Developer</td>
                 </tr>
-            </table>
-        </div>
-    </div>
+            </tbody>
+        </table>
+    </section>
 
-    <div id="goals" class="content">
-        <div class="content-header">Goals</div>
-        <div class="content-body">
-            <p>My goal in life is to be successful and give back to my family for their support.</p>
-        </div>
-    </div>
+    <section id="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li>Basketball</li>
+            <li>Gaming</li>
+            <li>Music</li>
+            <li>Watching Movies</li>
+        </ul>
+    </section>
 
-    <script>
-        function showContent(id) {
-            const contents = document.querySelectorAll('.content');
-            contents.forEach(content => content.style.display = 'none');
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
+    <section id="goals">
+        <h2>Goals in Life / Dream</h2>
+        <p>To be successful in life and give back to my family.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Picture Gallery</h2>
+        <p>Here are some images related to my interests:</p>
+        <div class="gallery">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/463004261_2023136481489815_4583702698394093898_n.jpg" alt="Music">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462545799_568958942525309_5011812986289502423_n.jpg" alt="Bonding with friends">
+        </div>
+    </section>
+
+    <section id="socials">
+        <h2>Links to Socials</h2>
+        <ul>
+            <li><a href="https://github.com/pilepsgithvb">Github Account</a></li>
+            <li><a href="https://www.linkedin.com/in/philippe-gerong-67705a24a">LinkedIn Profile</a></li>
+        </ul>
+    </section>
 </body>
 </html>
