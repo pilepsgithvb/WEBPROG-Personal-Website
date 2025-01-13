@@ -12,14 +12,14 @@
         <div class="center-tile">PHILIPPE'S PERSONAL WEBSITE</div>
 
         <!-- Tiles -->
-        <div class="tile" onclick="showContent('about')">About Me</div>
-        <div class="tile" onclick="showContent('education')">Education and Achievements</div>
-        <div class="tile" onclick="showContent('course')">Course</div>
-        <div class="tile" onclick="showContent('experience')">IT Experience</div>
-        <div class="tile" onclick="showContent('hobbies')">Hobbies and Interest</div>
-        <div class="tile" onclick="showContent('goals')">Goals in Life</div>
-        <div class="tile" onclick="showContent('gallery')">Picture Gallery</div>
-        <div class="tile" onclick="showContent('links')">Links to Socials</div>
+        <div class="tile brown" onclick="showContent('about')">About Me</div>
+        <div class="tile lightblue" onclick="showContent('education')">Education and Achievements</div>
+        <div class="tile pink" onclick="showContent('course')">Course</div>
+        <div class="tile orange" onclick="showContent('experience')">IT Experience</div>
+        <div class="tile red" onclick="showContent('hobbies')">Hobbies and Interest</div>
+        <div class="tile yellow" onclick="showContent('goals')">Goals in Life</div>
+        <div class="tile green" onclick="showContent('gallery')">Picture Gallery</div>
+        <div class="tile blue" onclick="showContent('links')">Links to Socials</div>
     </div>
 
     <!-- Content Sections -->
@@ -92,6 +92,13 @@
         </ul>
     </div>
 
-    <script src="script.js"></script>
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-content"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

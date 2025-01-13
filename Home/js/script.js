@@ -1,6 +1,12 @@
+function showContent(sectionId) {
+    // Get the content of the clicked section
+    const content = document.getElementById(sectionId).innerHTML;
 
-function showContent(id) {
-    document.querySelectorAll('.content').forEach(content => content.classList.add('hidden'));
-    document.getElementById(id).classList.remove('hidden');
-    }
-  
+    // Display the content in the popup
+    document.getElementById('popup-content').innerHTML = content;
+    document.getElementById('popup').classList.remove('hidden');
+}
+
+function closePopup() {
+    document.getElementById('popup').classList.add('hidden');
+}
