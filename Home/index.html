@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philippe's Personal Website</title>
     <link rel="stylesheet" href="css/flexbox-grid.css">
-    </head>
+</head>
 <body>
-    
-    <div class="header">Philippe's Personal Website</div>
+    <div class="monopoly-board">
+        <!-- Center Tile -->
+        <div class="center-tile">
+            <h1>PHILIPPE'S PERSONAL WEBSITE</h1>
+        </div>
 
-    <div class="container">
-        <div class="tile" onclick="showContent('about')">About Me</div>
-        <div class="tile" onclick="showContent('education')">Education and Achievements</div>
-        <div class="tile" onclick="showContent('course')">Course</div>
-        <div class="tile" onclick="showContent('experience')">IT Experience</div>
-        <div class="tile" onclick="showContent('hobbies')">Hobbies and Interests</div>
-        <div class="tile" onclick="showContent('goals')">Goals in Life</div>
-        <div class="tile" onclick="showContent('gallery')">Picture Gallery</div>
-        <div class="tile" onclick="showContent('links')">Links to Socials</div>
+        <!-- Tiles -->
+        <div class="tile about" onclick="showContent('about')">About Me</div>
+        <div class="tile education" onclick="showContent('education')">Education</div>
+        <div class="tile course" onclick="showContent('course')">Course</div>
+        <div class="tile experience" onclick="showContent('experience')">Experience</div>
+        <div class="tile hobbies" onclick="showContent('hobbies')">Hobbies</div>
+        <div class="tile goals" onclick="showContent('goals')">Goals</div>
+        <div class="tile gallery" onclick="showContent('gallery')">Gallery</div>
+        <div class="tile links" onclick="showContent('links')">Links</div>
     </div>
 
+    <!-- Content Divs -->
     <div id="about" class="content hidden">
         <h1>About Me</h1>
         <p>Hello! My name is Philippe, I am an aspiring IT student passionate about technology and improving myself.</p>
@@ -78,8 +82,8 @@
 
     <div id="gallery" class="content hidden">
         <h2>Picture Gallery</h2>
-        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/463004261_2023136481489815_4583702698394093898_n.jpg?stp=dst-jpg_s526x395&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHETe-I62mx5WuCf1hFSRcd9BIG9SjhkzT0Egb1KOGTNMnaFebwDWHGeu7WYAJPLoLCO_-jkujqK-et6lCDfUmN&_nc_ohc=7Io_GcGx-CkQ7kNvgGCffgS&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGBr9g5ydjjaPCj61xfZgg24AeP-1FcKPHbpRJGnzjKLQ&oe=676F9068" alt="Music">
-        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462545799_568958942525309_5011812986289502423_n.jpg?stp=dst-jpg_p480x480&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHpVopIRhmZx2J61g_r9gOjd5066H0FuHF3nTrofQW4censVjHKaCzwuNN4Uwk8SJL-xtQIsXuCB6xb5IIP8NgQ&_nc_ohc=x1C5yQDJk0sQ7kNvgHCDmKP&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHcGQP22BsremGYdw7kDxHiCyCtpT9ht4X5LTuaxss1-g&oe=676F94D6" alt="Bonding with friends">
+        <img src="image1.jpg" alt="Music">
+        <img src="image2.jpg" alt="Bonding with friends">
     </div>
 
     <div id="links" class="content hidden">
@@ -90,12 +94,6 @@
         </ul>
     </div>
 
-    <script>
-        function showContent(id) {
-            const contents = document.querySelectorAll('.content');
-            contents.forEach(content => content.classList.add('hidden'));
-            document.getElementById(id).classList.remove('hidden');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
