@@ -8,28 +8,29 @@ body {
 
 .monopoly-board {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 400px;
     margin: 50px auto;
-    border: 4px solid black;
     position: relative;
+    gap: 10px;
 }
 
 .center-tile {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     grid-row: 2 / 3;
     background: linear-gradient(to bottom, #b31217, #e52d27);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
+    border: 2px solid black;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .tile {
@@ -37,13 +38,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #e0e0e0;
     border: 2px solid black;
-    border-radius: 8px;
-    cursor: pointer;
+    border-radius: 5px;
     font-weight: bold;
-    text-transform: uppercase;
     font-size: 14px;
-    transition: transform 0.2s, opacity 0.2s;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, opacity 0.2s;
 }
 
 .tile:hover {
@@ -51,47 +52,26 @@ body {
     opacity: 0.9;
 }
 
-/* Specific colors for tiles */
-.tile:nth-child(1) { background-color: #a0522d; color: white; } /* Brown */
-.tile:nth-child(2) { background-color: #b0e0e6; } /* Light Blue */
-.tile:nth-child(3) { background-color: #ff69b4; color: white; } /* Pink */
-.tile:nth-child(4) { background-color: #ffa500; } /* Orange */
-.tile:nth-child(5) { background-color: #ff0000; color: white; } /* Red */
-.tile:nth-child(6) { background-color: #ffff00; } /* Yellow */
-.tile:nth-child(7) { background-color: #228b22; color: white; } /* Green */
-.tile:nth-child(8) { background-color: #0000ff; color: white; } /* Blue */
+.tile:nth-child(1) { background-color: #a0522d; color: white; }
+.tile:nth-child(2) { background-color: #b0e0e6; }
+.tile:nth-child(3) { background-color: #ff69b4; color: white; }
+.tile:nth-child(4) { background-color: #ffa500; }
+.tile:nth-child(5) { background-color: #ff0000; color: white; }
+.tile:nth-child(6) { background-color: #ffff00; }
+.tile:nth-child(7) { background-color: #228b22; color: white; }
+.tile:nth-child(8) { background-color: #0000ff; color: white; }
+
+.hidden {
+    display: none;
+}
 
 .content {
-    display: none;
-    margin: 20px auto;
+    margin-top: 20px;
     padding: 20px;
-    background: white;
+    background-color: white;
     border: 2px solid #ccc;
-    max-width: 600px;
-    border-radius: 8px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 20px auto;
     text-align: left;
-}
-
-.content img {
-    max-width: 100px;
-    margin: 10px;
-}
-
-.content table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.content table, .content th, .content td {
-    border: 1px solid black;
-}
-
-.content th, .content td {
-    padding: 8px;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: blue;
 }

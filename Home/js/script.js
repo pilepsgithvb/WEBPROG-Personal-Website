@@ -1,8 +1,6 @@
-function showContent(id) {
-    // Hide all content sections
-    const contents = document.querySelectorAll('.content');
-    contents.forEach(content => content.classList.add('hidden'));
 
-    // Show the clicked content
+function showContent(id) {
+    document.querySelectorAll('.content').forEach(content => content.classList.add('hidden'));
     document.getElementById(id).classList.remove('hidden');
-}
+    }
+  
