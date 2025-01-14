@@ -27,6 +27,7 @@ body {
     align-items: center;
 }
 
+/* HEADERS */
 .tile {
     position: relative;
     width: 200px;
@@ -53,6 +54,7 @@ body {
     border-bottom: 2px solid black;
 }
 
+/* CONTENTS */
 .tile:hover {
     opacity: 0.9;
 }
