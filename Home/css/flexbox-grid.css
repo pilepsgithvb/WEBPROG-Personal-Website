@@ -24,6 +24,7 @@ body {
     gap: 5px;
     max-width: 900px;
     margin: 5px auto;
+    align-items: center;
 }
 
 .tile {
