@@ -13,10 +13,10 @@ body {
     background-color: #c70000;
     color: white;
     outline: 5px solid #c70000;
-    padding: 20px;
-    font-size: 43px;
+    padding: 30px;
+    font-size: 50px;
     border: 5px solid white;
-    margin: 10px auto;
+    margin: 20px auto; 
     display: inline-block;
     text-transform: uppercase;
 }
@@ -24,17 +24,17 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 20px;
     max-width: 900px;
-    margin: 5px auto;
+    margin: 20px auto; 
     align-items: center;
+    justify-content: center; 
 }
 
-/* HEADERS */
 .tile {
     position: relative;
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 150px;
     background-color: #e0e0e0;
     border: 2px solid black;
     cursor: pointer;
@@ -43,7 +43,7 @@ body {
     justify-content: center;
     align-items: center; 
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -57,7 +57,6 @@ body {
     border-bottom: 2px solid black;
 }
 
-/* CONTENTS */
 .tile:hover {
     opacity: 0.9;
 }
@@ -76,7 +75,6 @@ body {
     text-align: left;
 }
 
-/* Carousel Styles */
 .carousel {
     position: relative;
     width: 100%;
