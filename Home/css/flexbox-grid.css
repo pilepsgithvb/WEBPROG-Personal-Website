@@ -1,8 +1,7 @@
 body {
     font-family: Corbel, Arial, sans-serif;
     text-align: center;
-    background-color: bisque;
-    background-image: url('pictures/bgIMG.png'); 
+    background-image: url('../pictures/bgIMG.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
