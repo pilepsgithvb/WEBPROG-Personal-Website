@@ -81,11 +81,18 @@
         </div>
 
     <div id="gallery" class="content hidden">
-        <h2>Picture Gallery</h2>
-        <img src="pictures/IMG_20240415_193535_762.jpg" alt="Picture">
-        <img src="pictures/received_542105985231169.jpeg" alt="Bonding with friends">
-        <img src="pictures/received_568958939191976.jpeg" alt="Bonding with friends2">
+    <h2>Picture Gallery</h2>
+    <div class="carousel">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-images">
+            <img src="pictures/IMG_20240415_193535_762.jpg" alt="Picture">
+            <img src="pictures/received_542105985231169.jpeg" alt="Bonding with friends">
+            <img src="pictures/received_568958939191976.jpeg" alt="Bonding with friends2">
         </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</div>
+
 
     <div id="links" class="content hidden">
         <h2>Links to Socials</h2>
