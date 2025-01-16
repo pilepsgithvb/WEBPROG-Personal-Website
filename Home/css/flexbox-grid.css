@@ -38,11 +38,11 @@ body {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    }
+}
 
 .tile::before {
     content: '';
@@ -71,4 +71,46 @@ body {
     border-radius: 10px;
     background-color: #f9f9f9;
     text-align: left;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
 }
